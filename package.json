@@ -1,0 +1,39 @@
+{
+  "name": "nightwatch-boilerplate",
+  "version": "1.0.0",
+  "description": "Nightwatch basic template with basic configuration. Starting point for end to end testing",
+  "main": "index.js",
+  "engines": {
+    "node": "4.4.6"
+  },
+  "scripts": {
+    "postinstall": "node nightwatch.conf.js",
+    "test": "./node_modules/.bin/nightwatch --env local",
+    "dev": "./node_modules/.bin/nodemon -w test/index.html --delay 250ms --exec 'npm run upload'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dkt201474/nightwatch-boilerplate.git"
+  },
+  "author": "dkt201474",
+  "license": "MIT",
+  "homepage": "https://github.com/dkt201474/nightwatch-boilerplate#readme",
+  "dependencies": {
+    "nightwatch": "^0.9.9",
+    "selenium-download": "^2.0.7"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "keywords": [
+    "nightwatch",
+    "testing",
+    "front-end",
+    "UI",
+    "browser",
+    "test",
+    "testing",
+    "User Acceptance Testing",
+    "UAT"
+  ]
+}
